@@ -13,10 +13,12 @@ class _MyClipRRectState extends State<MyClipRRect> {
   Widget build(BuildContext context) {
     return Center(
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(30.0),
+            topRight: Radius.circular(30.0),
+            bottomRight: Radius.circular(30.0)),
         child: Image.asset(
           'assets/icon/ocean.jpg',
-          width: 350,
         ),
       ),
     );

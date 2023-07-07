@@ -10,8 +10,6 @@ class MyAspectRatio extends StatelessWidget {
     return Container(
       color: Colors.orangeAccent,
       alignment: Alignment.center,
-      width: double.infinity,
-      height: 300,
       child: AspectRatio(
         aspectRatio: 16 / 9,
         child: Container(

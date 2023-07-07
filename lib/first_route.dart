@@ -14,26 +14,32 @@ class FirstRoute extends StatelessWidget {
         title: const Text('Flutter Mapp'),
       ),
       //! Just change the Widget001 for the Widget you want.
-      body: ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: 214,
-          itemBuilder: (BuildContext context, int index) {
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => SecondRoute(
-                          widgetName: ExampleDestination.widgetsList[index])),
-                );
-              },
-              child: Container(
-                height: 50,
-                child:
-                    Center(child: Text(ExampleDestination.widgetsList[index])),
-              ),
-            );
-          }),
+      body: ListView.separated(
+        padding: const EdgeInsets.all(8),
+        itemCount: ExampleDestination.widgetsList.length,
+        itemBuilder: (BuildContext context, int index) {
+          return InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => SecondRoute(
+                        widgetName: ExampleDestination.widgetsList[index])),
+              );
+            },
+            child: Container(
+              height: 50,
+              child: Center(child: Text(ExampleDestination.widgetsList[index])),
+            ),
+          );
+        },
+        separatorBuilder: (context, index) {
+          return Container(
+            height: 1,
+            color: Colors.grey, // Custom style
+          );
+        },
+      ),
     );
   }
 }

@@ -29,7 +29,7 @@ class _MyAnimatedCrossFadeState extends State<MyAnimatedCrossFade> {
           child: const Text(
             'Switch',
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.black54,
             ),
           ),
         ),

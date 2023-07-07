@@ -14,7 +14,7 @@ class MyDecoratedBox extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: RadialGradient(
             colors: <Color>[
-              Colors.deepOrange,
+              Colors.pink,
               Colors.red,
             ],
           ),

@@ -10,7 +10,7 @@ class MyFlutterLogo extends StatelessWidget {
     return const Center(
       child: FlutterLogo(
         size: 300,
-        style: FlutterLogoStyle.stacked,
+        style: FlutterLogoStyle.markOnly,
         textColor: Colors.blue,
       ),
     );

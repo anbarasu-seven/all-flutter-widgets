@@ -9,8 +9,8 @@ class MyConstrainedBox extends StatelessWidget {
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(
-          maxWidth: 900,
-          maxHeight: 350,
+          maxWidth: 200,
+          maxHeight: 100,
           
         ),
         child: Container(

@@ -21,9 +21,9 @@ class MyAnimatedPhysicalModelState extends State<MyAnimatedPhysicalModel> {
           AnimatedPhysicalModel(
             duration: const Duration(milliseconds: 500),
             curve: Curves.fastOutSlowIn,
-            elevation: _isFlat ? 0 : 6.0,
-            shape: BoxShape.rectangle,
-            shadowColor: Colors.black,
+            elevation: _isFlat ? 0 : 20.0,
+            shape: BoxShape.circle,
+            shadowColor: Colors.pink,
             color: Colors.white,
             child: const SizedBox(
               height: 120.0,

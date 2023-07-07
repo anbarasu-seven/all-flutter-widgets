@@ -10,7 +10,7 @@ class MyFadeInImage extends StatelessWidget {
     return Center(
       child: FadeInImage.assetNetwork(
         placeholder: 'assets/icon/ocean.jpg',
-        image: 'https://tinyurl.com/p4475pwh',
+        image: 'https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg',
       ),
     );
   }

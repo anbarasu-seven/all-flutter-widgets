@@ -29,9 +29,15 @@ class _MyDismissibleState extends State<MyDismissible> {
               items.removeAt(index);
             });
           },
-          child: ListTile(
-            title: Text(
-              'Item ${items[index]}',
+          child: Padding(
+            padding: const EdgeInsets.all(1.0),
+            child: ColoredBox(
+              color: Colors.orange,
+              child: ListTile(
+                title: Text(
+                  'Item ${items[index]}',
+                ),
+              ),
             ),
           ),
         );

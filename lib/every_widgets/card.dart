@@ -10,6 +10,11 @@ class MyCardWidget extends StatelessWidget {
     return Center(
       child: Card(
         elevation: 20,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(15.0),
+          ),
+        ),
         color: Colors.orangeAccent,
         child: Padding(
           padding: const EdgeInsets.all(15.0),

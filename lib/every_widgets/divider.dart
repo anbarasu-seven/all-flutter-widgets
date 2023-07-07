@@ -13,19 +13,17 @@ class MyDivider extends StatelessWidget {
           Container(
             height: 200,
             width: double.infinity,
-            color: Colors.orange,
+            color: Colors.grey,
           ),
-          const Divider(
-            color: Colors.white,
-            height: 20,
-            thickness: 5,
-            indent: 20,
-            endIndent: 40,
+          Container(
+            color: Colors.red,
+            width: double.infinity,
+            height: 2,
           ),
           Container(
             height: 200,
             width: double.infinity,
-            color: Colors.orange,
+            color: Colors.grey,
           ),
         ],
       ),

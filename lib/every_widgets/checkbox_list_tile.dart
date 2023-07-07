@@ -26,7 +26,7 @@ class _MyCheckboxListTileState extends State<MyCheckboxListTile> {
         checkColor: Colors.white,
         tileColor: Colors.black12,
         subtitle: const Text('This is a subtitle'),
-        controlAffinity: ListTileControlAffinity.leading,
+        controlAffinity: ListTileControlAffinity.trailing,
         tristate: true,
       ),
     );

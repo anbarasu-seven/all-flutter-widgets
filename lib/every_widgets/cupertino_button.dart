@@ -1,6 +1,7 @@
 //!CupertinoButton
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class MyCupertinoButton extends StatelessWidget {
   const MyCupertinoButton({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class MyCupertinoButton extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: const <Widget>[
           CupertinoButton(
+            color: Colors.green,
             onPressed: null,
             child: Text('Enabled'),
           ),

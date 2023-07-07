@@ -23,7 +23,7 @@ class MyFilterChipState extends State<MyFilterChip> {
             isSelected = !isSelected;
           });
         },
-        avatar: const Text('F'),
+        avatar: const Text('FF'),
       ),
     );
   }

@@ -15,22 +15,47 @@ class _MyAboutDialogState extends State<MyAboutDialog> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ElevatedButton(
-        child: const Text('Show About Dialog'),
-        onPressed: () {
-          showDialog(
-            context: context,
-            builder: (context) => const AboutDialog(
-              applicationIcon: FlutterLogo(),
-              applicationLegalese: 'Legalese',
-              applicationName: 'Flutter App',
-              applicationVersion: 'version 1.0.0',
-              children: [
-                Text('This is a text created by Flutter Mapp'),
-              ],
-            ),
-          );
-        },
+      child: Column(
+        children: [
+          ElevatedButton(
+            child: const Text('Show Dialog'),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) => const AboutDialog(
+                  applicationIcon: Center(child: FlutterLogo()),
+                  applicationLegalese: 'Legalese',
+                  applicationName: 'Flutter App',
+                  applicationVersion: 'version 1.0.0',
+                  children: <Widget>[
+                    Padding(
+                        padding: EdgeInsets.only(top: 15),
+                        child: Text('This is an about dialog in Flutter')
+                    )
+                  ],
+                ),
+              );
+            },
+          ),
+          ElevatedButton(
+            child: const Text('Show About Dialog'),
+            onPressed: () {
+              showAboutDialog(
+                context: context,
+                applicationIcon: Center(child: FlutterLogo()),
+                applicationLegalese: 'Legalese',
+                applicationName: 'Flutter App',
+                applicationVersion: 'version 1.0.0',
+                children: <Widget>[
+                  Padding(
+                      padding: EdgeInsets.only(top: 15),
+                      child: Text('This is an about dialog in Flutter')
+                  )
+                ],
+              );
+            },
+          ),
+        ],
       ),
     );
   }

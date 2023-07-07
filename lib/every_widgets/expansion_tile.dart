@@ -24,7 +24,7 @@ class _MyExpansionTileState extends State<MyExpansionTile> {
             ),
           ],
           onExpansionChanged: (bool expanded) {},
-          controlAffinity: ListTileControlAffinity.leading,
+          controlAffinity: ListTileControlAffinity.trailing,
         ),
       ],
     );

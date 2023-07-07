@@ -20,7 +20,7 @@ class _MyBottomSheetState extends State<MyBottomSheet> {
               context: context,
               builder: (BuildContext context) {
                 return SizedBox(
-                  height: 400,
+                  height: 800,
                   child: Center(
                     child: ElevatedButton(
                       child: const Text('Close'),

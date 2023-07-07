@@ -9,6 +9,7 @@ class MyCenterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
       children: [
         Container(
           color: Colors.orangeAccent,

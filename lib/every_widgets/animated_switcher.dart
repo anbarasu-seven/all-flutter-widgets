@@ -19,7 +19,7 @@ class _MyAnimatedSwitcherState extends State<MyAnimatedSwitcher> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           AnimatedSwitcher(
-            duration: const Duration(milliseconds: 500),
+            duration: const Duration(milliseconds: 200),
             child: Text(
               '$_count',
               style: const TextStyle(fontSize: 40),
@@ -29,13 +29,85 @@ class _MyAnimatedSwitcherState extends State<MyAnimatedSwitcher> {
               return ScaleTransition(scale: animation, child: child);
             },
           ),
-          ElevatedButton(
-            child: const Text('Add'),
-            onPressed: () {
-              setState(() {
-                _count += 1;
-              });
-            },
+          Column(
+            children: [
+              ElevatedButton(
+                child: const Text('Add'),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              FilledButton(
+                child: const Text('Add'),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              OutlinedButton(
+                child: const Icon(Icons.add),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.ice_skating),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              BackButton(
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              CloseButton(
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              FloatingActionButton(
+                child: const Icon(Icons.add),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              MaterialButton(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: const Text("Material Button"),
+                ),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+              TextButton(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: const Text("Text Button"),
+                ),
+                onPressed: () {
+                  setState(() {
+                    _count += 1;
+                  });
+                },
+              ),
+            ],
           ),
         ],
       ),

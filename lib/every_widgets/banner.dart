@@ -13,7 +13,7 @@ class MyBanner extends StatelessWidget {
         child: ClipRect(
           child: Banner(
             message: "25% off",
-            location: BannerLocation.topEnd,
+            location: BannerLocation.bottomEnd,
             color: Colors.red,
             child: Container(
               color: Colors.blueGrey,

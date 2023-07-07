@@ -8,7 +8,7 @@ class MyCircleAvatar extends StatelessWidget {
     return const Center(
       child: CircleAvatar(
         backgroundColor: Colors.orangeAccent,
-        radius: 55,
+        radius: 36,
         backgroundImage: AssetImage('assets/icon/blue.jpg'),
         child: Text('Hi'),
       ),

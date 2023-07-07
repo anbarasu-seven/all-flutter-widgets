@@ -13,7 +13,7 @@ class MyFittedBox extends StatelessWidget {
         color: Colors.orangeAccent,
         child: const FittedBox(
           child: Text(
-            'This is a pretty long text',
+            'This is a pretty',
             style: TextStyle(color: Colors.black),
           ),
         ),

@@ -8,7 +8,7 @@ class MyColorFiltered extends StatelessWidget {
   Widget build(BuildContext context) {
     return ColorFiltered(
       colorFilter: const ColorFilter.mode(
-        Colors.white,
+        Colors.blue,
         BlendMode.color,
       ),
       child: Image.asset('assets/icon/blue.jpg'),

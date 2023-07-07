@@ -26,7 +26,11 @@ class MyGridTileBar extends StatelessWidget {
           ),
           footer: const GridTileBar(
             backgroundColor: Colors.black45,
-            leading: Icon(Icons.favorite),
+            leading: Icon(Icons.person),
+            title: Text(''),
+            trailing: Icon(
+              Icons.favorite_border_rounded,
+            ),
           ),
         ),
       ),

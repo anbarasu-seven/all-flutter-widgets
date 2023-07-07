@@ -8,9 +8,9 @@ class MyCircularProgressIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: CircularProgressIndicator(
-        color: Colors.orangeAccent,
-        backgroundColor: Colors.blueGrey,
-        value: 0.50,
+        color: Colors.redAccent,
+        backgroundColor: Colors.black12,
+        strokeWidth: 2.0,
       ),
     );
   }

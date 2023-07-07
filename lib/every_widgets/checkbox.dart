@@ -17,7 +17,7 @@ class _MyCheckboxWidgetState extends State<MyCheckboxWidget> {
       child: Checkbox(
         value: isChecked,
         activeColor: Colors.orangeAccent,
-        tristate: true,
+        tristate: false,
         onChanged: (newBool) {
           setState(() {
             isChecked = newBool;
